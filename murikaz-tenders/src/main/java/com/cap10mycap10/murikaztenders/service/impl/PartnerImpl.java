@@ -1,11 +1,11 @@
 package com.cap10mycap10.murikaztenders.service.impl;
 
-import com.cap10mycap10.gmat.tenders.exception.ResourceNotFoundException;
-import com.cap10mycap10.gmat.tenders.model.Partner;
-import com.cap10mycap10.gmat.tenders.pojo.PartnerPojo;
-import com.cap10mycap10.gmat.tenders.proj.PartnerView;
-import com.cap10mycap10.gmat.tenders.repository.PartnerRepository;
-import com.cap10mycap10.gmat.tenders.service.interf.PartnerService;
+import com.cap10mycap10.murikaztenders.exception.ResourceNotFoundException;
+import com.cap10mycap10.murikaztenders.model.Partner;
+import com.cap10mycap10.murikaztenders.pojo.PartnerPojo;
+import com.cap10mycap10.murikaztenders.proj.PartnerView;
+import com.cap10mycap10.murikaztenders.repository.PartnerRepository;
+import com.cap10mycap10.murikaztenders.service.interf.PartnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
