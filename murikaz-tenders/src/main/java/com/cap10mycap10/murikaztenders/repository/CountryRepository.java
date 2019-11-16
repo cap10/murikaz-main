@@ -1,7 +1,7 @@
 package com.cap10mycap10.murikaztenders.repository;
 
-import com.cap10mycap10.gmat.tenders.model.Country;
-import com.cap10mycap10.gmat.tenders.proj.CountryView;
+import com.cap10mycap10.murikaztenders.model.Country;
+import com.cap10mycap10.murikaztenders.proj.CountryView;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Collection;

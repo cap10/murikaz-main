@@ -1,6 +1,6 @@
 package com.cap10mycap10.murikaztenders.validators;
 
-import com.cap10mycap10.gmat.tenders.model.User;
+import com.cap10mycap10.murikaztenders.model.User;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

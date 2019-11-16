@@ -1,6 +1,6 @@
 package com.cap10mycap10.murikaztenders.repository;
 
-import com.cap10mycap10.gmat.tenders.model.Opportunity;
+import com.cap10mycap10.murikaztenders.model.Opportunity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

@@ -1,6 +1,9 @@
 package com.cap10mycap10.murikaztenders.pojo;
 
-import com.cap10mycap10.gmat.tenders.model.*;
+import com.cap10mycap10.murikaztenders.model.ClientType;
+import com.cap10mycap10.murikaztenders.model.ServiceType;
+import com.cap10mycap10.murikaztenders.model.Source;
+import com.cap10mycap10.murikaztenders.model.Thematic;
 import lombok.Data;
 
 import java.util.Date;

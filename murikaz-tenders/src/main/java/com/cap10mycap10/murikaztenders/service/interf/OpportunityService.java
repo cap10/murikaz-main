@@ -1,9 +1,9 @@
 package com.cap10mycap10.murikaztenders.service.interf;
 
-import com.cap10mycap10.gmat.tenders.exception.ResourceNotFoundException;
-import com.cap10mycap10.gmat.tenders.model.Opportunity;
-import com.cap10mycap10.gmat.tenders.pojo.OpportunityPojo;
-import com.cap10mycap10.gmat.tenders.pojo.TenderDetailPojo;
+import com.cap10mycap10.murikaztenders.exception.ResourceNotFoundException;
+import com.cap10mycap10.murikaztenders.model.Opportunity;
+import com.cap10mycap10.murikaztenders.pojo.OpportunityPojo;
+import com.cap10mycap10.murikaztenders.pojo.TenderDetailPojo;
 
 import java.util.List;
 

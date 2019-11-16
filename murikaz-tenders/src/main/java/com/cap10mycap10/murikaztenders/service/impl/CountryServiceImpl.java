@@ -1,11 +1,11 @@
 package com.cap10mycap10.murikaztenders.service.impl;
 
-import com.cap10mycap10.gmat.tenders.exception.ResourceNotFoundException;
-import com.cap10mycap10.gmat.tenders.model.Country;
-import com.cap10mycap10.gmat.tenders.pojo.CountryPojo;
-import com.cap10mycap10.gmat.tenders.proj.CountryView;
-import com.cap10mycap10.gmat.tenders.repository.CountryRepository;
-import com.cap10mycap10.gmat.tenders.service.interf.CountryService;
+import com.cap10mycap10.murikaztenders.exception.ResourceNotFoundException;
+import com.cap10mycap10.murikaztenders.model.Country;
+import com.cap10mycap10.murikaztenders.pojo.CountryPojo;
+import com.cap10mycap10.murikaztenders.proj.CountryView;
+import com.cap10mycap10.murikaztenders.repository.CountryRepository;
+import com.cap10mycap10.murikaztenders.service.interf.CountryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

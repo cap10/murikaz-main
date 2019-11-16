@@ -1,13 +1,14 @@
 package com.cap10mycap10.murikaztenders.controller;
 
-import com.cap10mycap10.gmat.tenders.exception.ResourceNotFoundException;
-import com.cap10mycap10.gmat.tenders.pojo.OpportunityPojo;
-import com.cap10mycap10.gmat.tenders.pojo.TenderDetailPojo;
-import com.cap10mycap10.gmat.tenders.service.interf.OpportunityService;
-import com.cap10mycap10.gmat.tenders.service.interf.TransactionService;
+import com.cap10mycap10.murikaztenders.exception.ResourceNotFoundException;
+import com.cap10mycap10.murikaztenders.pojo.OpportunityPojo;
+import com.cap10mycap10.murikaztenders.pojo.TenderDetailPojo;
+import com.cap10mycap10.murikaztenders.service.interf.OpportunityService;
+import com.cap10mycap10.murikaztenders.service.interf.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController("/api/v1/opportunities")
 public class OpportunityController {

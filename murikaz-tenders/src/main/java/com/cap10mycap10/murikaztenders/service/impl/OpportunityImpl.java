@@ -1,14 +1,14 @@
 package com.cap10mycap10.murikaztenders.service.impl;
 
-import com.cap10mycap10.gmat.tenders.exception.ResourceNotFoundException;
-import com.cap10mycap10.gmat.tenders.model.*;
-import com.cap10mycap10.gmat.tenders.pojo.OpportunityPojo;
-import com.cap10mycap10.gmat.tenders.pojo.TenderDetailPojo;
-import com.cap10mycap10.gmat.tenders.repository.CountryRepository;
-import com.cap10mycap10.gmat.tenders.repository.EmployeeRepository;
-import com.cap10mycap10.gmat.tenders.repository.OpportunityRepository;
-import com.cap10mycap10.gmat.tenders.repository.TransactionRepository;
-import com.cap10mycap10.gmat.tenders.service.interf.OpportunityService;
+import com.cap10mycap10.murikaztenders.exception.ResourceNotFoundException;
+import com.cap10mycap10.murikaztenders.model.*;
+import com.cap10mycap10.murikaztenders.pojo.OpportunityPojo;
+import com.cap10mycap10.murikaztenders.pojo.TenderDetailPojo;
+import com.cap10mycap10.murikaztenders.repository.CountryRepository;
+import com.cap10mycap10.murikaztenders.repository.EmployeeRepository;
+import com.cap10mycap10.murikaztenders.repository.OpportunityRepository;
+import com.cap10mycap10.murikaztenders.repository.TransactionRepository;
+import com.cap10mycap10.murikaztenders.service.interf.OpportunityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

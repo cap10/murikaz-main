@@ -1,12 +1,13 @@
 package com.cap10mycap10.murikaztenders.model;
 
-import com.cap10mycap10.gmat.tenders.validators.PasswordMatches;
+import com.cap10mycap10.murikaztenders.validators.PasswordMatches;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;

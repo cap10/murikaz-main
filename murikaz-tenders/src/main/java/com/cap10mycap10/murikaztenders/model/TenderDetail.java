@@ -2,6 +2,7 @@ package com.cap10mycap10.murikaztenders.model;
 
 import lombok.Data;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 

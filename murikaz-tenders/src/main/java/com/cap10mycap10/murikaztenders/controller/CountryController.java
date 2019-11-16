@@ -1,14 +1,15 @@
 package com.cap10mycap10.murikaztenders.controller;
 
 
-import com.cap10mycap10.gmat.tenders.exception.ResourceNotFoundException;
-import com.cap10mycap10.gmat.tenders.pojo.CountryPojo;
-import com.cap10mycap10.gmat.tenders.service.interf.CountryService;
+import com.cap10mycap10.murikaztenders.exception.ResourceNotFoundException;
+import com.cap10mycap10.murikaztenders.pojo.CountryPojo;
+import com.cap10mycap10.murikaztenders.service.interf.CountryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController("/api/v1/countries")
 public class CountryController {

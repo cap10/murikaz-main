@@ -1,7 +1,7 @@
 package com.cap10mycap10.murikaztenders.service.interf;
 
-import com.cap10mycap10.gmat.tenders.exception.ResourceNotFoundException;
-import com.cap10mycap10.gmat.tenders.model.Transaction;
+import com.cap10mycap10.murikaztenders.exception.ResourceNotFoundException;
+import com.cap10mycap10.murikaztenders.model.Transaction;
 
 import java.util.List;
 
