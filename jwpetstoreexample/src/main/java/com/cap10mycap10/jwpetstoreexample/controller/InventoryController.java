@@ -24,6 +24,7 @@ public class InventoryController {
 
     @PostMapping("addCars")
     @PreAuthorize("hasAuthority('INVENTORY_ADD')")
+
     public String addCars(@RequestBody HashMap<String, String> payload) {
 
         cars.addAll(payload.values());
