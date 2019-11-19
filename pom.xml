@@ -26,5 +26,6 @@
         <module>demo-thyme</module>
         <module>demo-cloud-config</module>
         <module>cloud-config-client</module>
+        <module>eureka-server</module>
     </modules>
 </project>
