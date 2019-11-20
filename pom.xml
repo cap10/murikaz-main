@@ -23,7 +23,6 @@
         <module>murikaz-tenders</module>
         <module>murikaz-rest-api</module>
         <module>murikaz-authserver</module>
-        <module>demo-thyme</module>
         <module>demo-cloud-config</module>
         <module>cloud-config-client</module>
         <module>eureka-server</module>
