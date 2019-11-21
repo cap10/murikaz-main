@@ -19,9 +19,9 @@ public class GroupAuthority {
     private Long id;
 
     @Column(name = "group_id")
-    private Group groupId;
+    private int groupId;
 
-    @Column(name = "authority_id")
-    private Authority authorityId;
+    @Column(name = "authority")
+    private String authority;
 
 }

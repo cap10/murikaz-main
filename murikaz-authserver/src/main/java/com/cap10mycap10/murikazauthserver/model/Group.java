@@ -19,4 +19,5 @@ public class Group {
 
     @Column(name = "group_name")
     private String groupName;
+
 }

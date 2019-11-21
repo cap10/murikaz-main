@@ -16,13 +16,12 @@ public class GroupMember {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @OneToMany(mappedBy="user",targetEntity=User.class,fetch=FetchType.LAZY)
-    @Column(name = "user_id")
-    private User userId;
 
-    @OneToMany(mappedBy="groups",targetEntity=Group.class,fetch=FetchType.LAZY)
+    private String  username;
+
+
     @Column(name = "group_id")
-    private Group groupId;
+    private String groupId;
 
 
 }

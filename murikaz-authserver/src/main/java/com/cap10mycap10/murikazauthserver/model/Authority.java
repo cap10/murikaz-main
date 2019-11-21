@@ -16,7 +16,7 @@ public class Authority {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "authority_id")
-    private Long id;
+    private int id;
 
     @NotNull
     private String authority;
