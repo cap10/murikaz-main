@@ -3,7 +3,7 @@ package com.cap10mycap10.murikaztenders.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -13,8 +13,8 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@EntityListeners(AuditingEntityListener.class)
-public class Opportunity extends Auditable<String> {
+@Audited
+public class Opportunity  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

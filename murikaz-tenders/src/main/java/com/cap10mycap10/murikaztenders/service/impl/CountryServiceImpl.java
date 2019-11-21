@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.Date;
 
 @Service
 public class CountryServiceImpl implements CountryService {
@@ -22,10 +21,10 @@ public class CountryServiceImpl implements CountryService {
     public void createCountry(CountryPojo countryPojo) {
         Country country = new Country();
         country.setName(countryPojo.getName());
-        country.setCreatedDate(new Date());
+       /* country.setCreatedDate(new Date());
         country.setCreatedBy(countryPojo.getCreatedBy());
         country.setLastModifiedBy(countryPojo.getLastModifiedBy());
-        country.setLastModifiedDate(new Date());
+        country.setLastModifiedDate(new Date());*/
         countryRepository.save(country);
     }
 
@@ -35,8 +34,8 @@ public class CountryServiceImpl implements CountryService {
                 .findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Country not found on ::" + id));
         country.setName(countryPojo.getName());
-        country.setLastModifiedBy(countryPojo.getLastModifiedBy());
-        country.setLastModifiedDate(new Date());
+        /*country.setLastModifiedBy(countryPojo.getLastModifiedBy());
+        country.setLastModifiedDate(new Date());*/
         countryRepository.save(country);
     }
 

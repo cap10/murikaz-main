@@ -27,5 +27,6 @@
         <module>cloud-config-client</module>
         <module>eureka-server</module>
         <module>eureka-service</module>
+        <module>demo-aop</module>
     </modules>
 </project>

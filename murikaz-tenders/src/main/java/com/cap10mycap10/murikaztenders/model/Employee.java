@@ -4,8 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.envers.Audited;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.validation.constraints.Email;
 
 @Getter
@@ -13,8 +17,8 @@ import javax.validation.constraints.Email;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@EntityListeners(EntityListeners.class)
-public class Employee extends Auditable<String> {
+@Audited
+public class Employee  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

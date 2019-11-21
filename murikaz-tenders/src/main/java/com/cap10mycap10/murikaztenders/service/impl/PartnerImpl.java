@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.Date;
 
 @Service
 public class PartnerImpl implements PartnerService {
@@ -22,10 +21,10 @@ public class PartnerImpl implements PartnerService {
     public void createPartner(PartnerPojo partnerPojo) {
         Partner partner = new Partner();
         partner.setName(partnerPojo.getName());
-        partner.setCreatedDate(new Date());
+       /* partner.setCreatedDate(new Date());
         partner.setCreatedBy(partnerPojo.getCreatedBy());
         partner.setLastModifiedBy(partnerPojo.getLastModifiedBy());
-        partner.setLastModifiedDate(new Date());
+        partner.setLastModifiedDate(new Date());*/
         partnerRepository.save(partner);
     }
 
@@ -34,8 +33,8 @@ public class PartnerImpl implements PartnerService {
         Partner partner = partnerRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Partner not found on::" + id));
         partner.setName(partnerPojo.getName());
-        partner.setLastModifiedDate(new Date());
-        partner.setLastModifiedBy(partnerPojo.getLastModifiedBy());
+       /* partner.setLastModifiedDate(new Date());
+        partner.setLastModifiedBy(partnerPojo.getLastModifiedBy());*/
     }
 
     @Override

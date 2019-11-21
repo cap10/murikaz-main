@@ -1,6 +1,7 @@
 package com.cap10mycap10.murikaztenders.model;
 
 import lombok.Data;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -9,8 +10,8 @@ import java.util.Set;
 
 @Data
 @Entity
-@EntityListeners(EntityListeners.class)
-public class ContractDetail extends Auditable<String> {
+@Audited
+public class ContractDetail  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -10,7 +10,8 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "groups")
+@Table(name = "groups",
+        uniqueConstraints = {@UniqueConstraint(columnNames={"group_name"})})
 public class Group {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

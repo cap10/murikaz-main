@@ -12,7 +12,6 @@ import com.cap10mycap10.murikaztenders.service.interf.OpportunityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -49,8 +48,8 @@ public class OpportunityImpl implements OpportunityService {
         opportunity.setRegistered(false);
         opportunity.setPursued(false);
         opportunity.setResult(false);
-        opportunity.setCreatedBy(opportunityPojo.getCreatedBy());
-        opportunity.setCreatedDate(new Date());
+        /*opportunity.setCreatedBy(opportunityPojo.getCreatedBy());
+        opportunity.setCreatedDate(new Date());*/
         Opportunity opportunity1 = opportunityRepository.save(opportunity);
         createTransaction(opportunity1);
     }
@@ -75,8 +74,8 @@ public class OpportunityImpl implements OpportunityService {
         opportunity.setRegistered(false);
         opportunity.setPursued(false);
         opportunity.setResult(false);
-        opportunity.setLastModifiedBy(opportunityPojo.getLastModifiedBy());
-        opportunity.setLastModifiedDate(new Date());
+        /*opportunity.setLastModifiedBy(opportunityPojo.getLastModifiedBy());
+        opportunity.setLastModifiedDate(new Date());*/
         opportunityRepository.save(opportunity);
     }
 

@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -18,9 +18,9 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @Entity
 @Table(name = "users")
-@EntityListeners(AuditingEntityListener.class)
 @PasswordMatches
-public class User extends Auditable<String> {
+@Audited
+public class User  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -36,7 +36,6 @@ public class User extends Auditable<String> {
     @NotNull
     @NotEmpty
     private String password;
-
     private String matchingPassword;
 
 }

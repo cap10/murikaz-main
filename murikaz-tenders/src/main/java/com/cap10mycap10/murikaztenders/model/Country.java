@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 
@@ -13,8 +13,8 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@EntityListeners(AuditingEntityListener.class)
-public class Country extends Auditable<String> {
+@Audited
+public class Country  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

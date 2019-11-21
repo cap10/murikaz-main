@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.security.Principal;
 
 @RestController
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+
 public class PetStoreController {
     @GetMapping("pet")
     @PreAuthorize("hasAuthority('AUTHORIZED_PETSTORE_USER')")

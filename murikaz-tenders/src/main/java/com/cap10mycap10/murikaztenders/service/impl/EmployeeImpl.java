@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.Date;
 
 @Service
 public class EmployeeImpl implements EmployeeService {
@@ -23,10 +22,7 @@ public class EmployeeImpl implements EmployeeService {
         Employee employee = new Employee();
         employee.setName(employeePojo.getName());
         employee.setSurname((employeePojo.getSurname()));
-        employee.setCreatedDate(new Date());
-        employee.setCreatedBy(employeePojo.getCreatedBy());
-        employee.setLastModifiedBy(employeePojo.getLastModifiedBy());
-        employee.setLastModifiedDate(new Date());
+
         employeeRepository.save(employee);
     }
 
@@ -37,8 +33,7 @@ public class EmployeeImpl implements EmployeeService {
         employee.setSurname(employeePojo.getSurname());
         employee.setName(employeePojo.getName());
         employee.setEmail(employeePojo.getEmail());
-        employee.setLastModifiedBy(employeePojo.getLastModifiedBy());
-        employee.setLastModifiedDate(new Date());
+
         employeeRepository.save(employee);
     }
 
