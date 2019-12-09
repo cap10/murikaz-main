@@ -28,5 +28,6 @@
         <module>eureka-server</module>
         <module>eureka-service</module>
         <module>demo-aop</module>
+        <module>murikaz-sagas</module>
     </modules>
 </project>
