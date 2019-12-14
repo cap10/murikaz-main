@@ -12,7 +12,7 @@
     <artifactId>murikaz-main</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>murikaz-main</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Spring Boot Examples</description>
     <packaging>pom</packaging>
     <properties>
         <java.version>1.8</java.version>
